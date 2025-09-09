@@ -8,7 +8,7 @@ import { DestinationContext } from "@/context/DestinationContext"
 function GoogleMapsSection() {
   const containerStyle = {
     width: "100%",
-    height: "600px",
+    height: "575px",
   }
 
   const [map, setMap] = useState(null)

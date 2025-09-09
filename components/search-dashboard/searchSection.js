@@ -44,7 +44,7 @@ function SearchSection() {
         <InputItem type='destination' />
         <button onClick={() => calculateDistance()} className='p-3 bg-amber-500 hover:bg-amber-400 text-black rounded-lg mt-5 w-full'>Search</button>
       </div>
-      {distance ? <CarListOptions /> : null}
+      {distance ? <CarListOptions distance={distance} /> : null}
     </div>
   )
 }

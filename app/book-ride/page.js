@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react'
-import Navbar from '@/components/Navbar' 
+import Navbar from '@/components/Navbar'
 import GoogleMapsSection from '@/components/search-dashboard/GoogleMapsSection'
 import SearchSection from '@/components/search-dashboard/searchSection'
 import { SourceContext } from "@/context/SourceContext"
