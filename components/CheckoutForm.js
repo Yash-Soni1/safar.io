@@ -18,7 +18,7 @@ export default function CheckoutForm({ amount }) {
     const { error } = await stripe.confirmPayment({
       elements,
       confirmParams: {
-        return_url: "http://localhost:3000/success", // change in prod
+        return_url: "https://safar-io-pi.vercel.app/success", // change in prod
       },
     })
 
