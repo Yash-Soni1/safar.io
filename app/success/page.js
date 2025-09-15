@@ -6,7 +6,7 @@ export default function SuccessPage() {
   return (
     <div className="pt-12 text-center min-h-screen bg-gray-50">
       <h1 className="text-4xl font-extrabold text-green-600 mb-3">
-        Payment Successful 🎉
+        Payment Successful 
       </h1>
 
       {/* Car GIF */}

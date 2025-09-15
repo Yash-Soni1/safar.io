@@ -11,7 +11,7 @@ function Hero() {
 
   // 👇 Add multiple rotating titles
   const titles = useMemo(
-    () => ["Book a Ride", "Track Your Driver", "Ride Safely", "Pay Securely"],
+    () => ["Book a Ride", "Ride Safely", "Pay Securely"],
     []
   );
 

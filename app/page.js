@@ -4,7 +4,8 @@ import { useUser } from "@clerk/nextjs"
 import { useRouter } from "next/navigation"
 import Navbar from "@/components/Navbar"
 import { Car } from "lucide-react"
-
+import RideSaver from "@/components/RideSaver"
+import RideList from "@/components/RideList"
 import { Hero } from "@/components/ui/animated-hero"
 import AboutSection from "@/components/ui/about-section"
 
@@ -46,10 +47,10 @@ export default function DashboardOrHome() {
           Book rides instantly, track your drivers in real-time, and enjoy a seamless commuting experience.
         </p>
 
-        <div className="gap-6 flex flex-col items-center mt-6">
+        <div className="gap-6 grid grid-cols-3 items-center mt-6 max-w-9/12">
           <div
             onClick={() => router.push("/book-ride")}
-            className="cursor-pointer p-6 bg-gray-800/70 rounded-2xl shadow-lg hover:shadow-amber-500/30 transition"
+            className="cursor-pointer p-6 bg-gray-800/70 h-36 rounded-2xl shadow-lg hover:shadow-amber-500/30 transition"
           >
             <div className="flex flex-col items-center text-center space-y-2">
               <h3 className="text-xl font-semibold flex items-center gap-2">
@@ -60,6 +61,34 @@ export default function DashboardOrHome() {
               </p>
             </div>
           </div>
+          <div
+            onClick={() => router.push("/save-ride")}
+            className="cursor-pointer p-6 bg-gray-800/70 h-36 rounded-2xl shadow-lg hover:shadow-amber-500/30 transition"
+          >
+            <div className="flex flex-col items-center text-center space-y-2">
+              <h3 className="text-xl font-semibold flex items-center gap-2">
+                <Car />   <RideSaver/>
+              </h3>
+              <p className="text-gray-400">
+                Nothing here
+              </p>
+            </div>
+          </div>
+          <div
+            onClick={() => router.push("/my-rides")}
+            className="cursor-pointer p-6 bg-gray-800/70 h-36 rounded-2xl shadow-lg hover:shadow-amber-500/30 transition"
+          >
+            <div className="flex flex-col items-center text-center space-y-2">
+              <h3 className="text-xl font-semibold flex items-center gap-2">
+                <Car />  <RideList />
+              </h3>
+              <p className="text-gray-400">
+                See your Recent Rides
+              </p>
+            </div>
+          </div>
+          
+         
         </div>
       </main>
     </div>
