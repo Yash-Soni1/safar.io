@@ -32,7 +32,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "lib/supabaseClient.js"  ],
+, "lib/supabaseClient.js", "app/api/create-intent/route.js"  ],
   "exclude": [
     "node_modules"
   ]
